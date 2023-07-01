@@ -29,11 +29,40 @@ __Java microservice:__ A backend service built with Java and Spring Boot.
 
 __Nginx:__ A web server used for routing and load balancing.
 
-Clone the [E-martApp repository](https://github.com/dybran/Containerizing-Microservices-Project/tree/main/E-martApp-Project).
+Create a folder
 
-`$ git clone https://github.com/dybran/Containerizing-Microservices-Project.git`
+`$ mkdir Docker-Engine`
 
-`$ cd E-martApp-Project`
+`$ cd Docker-Engine`
+
+Pick an ubuntu box from the Vagrant cloud and run
+
+`$ vagrant init <vagrant-box>`
+
+Open the Vagrantfile and assign a unique IP address and increase the RAM size for the setup to run faster.
+
+Then run `$ vagrant up` to bring up the VM
+
+Clone the repository `$ git clone https://github.com/dybran/Containerizing-Microservices-Project.git`
+
+`$ cd Containerizing-Microservices-Project/E-martApp-Project`
+
+![](./images/same.PNG)
+
+Install Docker Engine using the [Documentation](https://docs.docker.com/engine/install/ubuntu/).
+
+Then `$ vagrant ssh` to login
+
+Add the vagrant user to the docker group
+
+`$ usermod -aG docker vagrant`
+
+Log out and login then run
+
+`$ id vagrant`
+
+__N/B:__ Make sure it is in the same folder as the vagrantfile.
+
 
 This is a Mono Repository which means that all the micro services source code is in one repository. Based on requirement, the micro services source codes are to be in different repository which is beneficial to create seperate CI/CD pipelines for the microservices. 
 
