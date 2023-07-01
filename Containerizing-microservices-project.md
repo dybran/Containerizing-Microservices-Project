@@ -286,7 +286,7 @@ Display the images
 
 `$ docker images`
 
-Check for runnung containers
+Check for running containers
 
 `$ docker ps`
 
