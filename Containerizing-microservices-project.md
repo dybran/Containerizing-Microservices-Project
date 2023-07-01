@@ -268,7 +268,7 @@ Switch to root user
 
 `$ sudo -i`
 
-Change into the __/vagrant/__
+Change into __/vagrant/__ directory
 
 `$ cd /vagrant/`
 
