@@ -261,3 +261,42 @@ __N/B:__
 - In the __MONGO_INITDB_DATABASE=epoc__, the __epoc__ is a requirement in __nodeapi/config/keys.js__ developed by the developers.
 - In the __MYSQL_ROOT_PASSWORD=emartdbpass__, __emartdbpass__ is found in the __javaapi/src/main/resources/application.properties__.
 - For the container image to be created, __depends_on__ should be present.
+
+__Build and Run__
+
+Switch to root user
+
+`$ sudo -i`
+
+Change into the __/vagrant/__
+
+`$ cd /vagrant/`
+
+Change into the __E-martApp-Project__
+
+`$ cd Containerizing-Microservices-Project/E-martApp-Project`
+
+Run the command 
+
+`$ docker compose up -d`
+
+![](./images/ck.PNG)
+
+Display the images
+
+`$ docker images`
+
+Check for runnung containers
+
+`$ docker ps`
+
+![](./images/allall.PNG)
+
+Access the Application on browser
+
+![](./images/1.PNG)
+
+Login
+
+![](./images/2.PNG)
+
