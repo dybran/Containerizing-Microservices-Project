@@ -304,7 +304,7 @@ We can stop the containers by running the command
 
 `$ docker compose down`
 
-Whenever make changes to the codes, we pull the updated code from github 
+Whenever developers make changes to the codes, we pull the updated code from github. This can also be automated using a CI/CD pipeline.
 
 `$ git pull` 
 
