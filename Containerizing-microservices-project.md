@@ -298,7 +298,7 @@ Access the Application on browser
 
 Login
 
-![](./images/2.PNG)
+![](./images/xcx.PNG)
 
 We can stop the containers by running the command
 
