@@ -304,6 +304,10 @@ We can stop the containers by running the command
 
 `$ docker compose down`
 
-When ever changes are made to the codes, we pull from github and run the `$ docker compose build` command to add the changes. 
+Whenever make changes to the codes, we pull the updated code from github 
 
-It is adviced to make small changes at a time in microservices than making big changes at once.
+`$ git pull` 
+
+and run the `$ docker compose build` command to build the changes. 
+
+In microservices, it is encouraged to make small changes multiple times than making big changes at once.
